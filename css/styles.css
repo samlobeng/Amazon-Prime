@@ -1,0 +1,61 @@
+/* bg color : #0f171e */
+
+body{
+    background-color: #0f171e;
+    color: #fff;
+}
+
+.prime-bar{
+    background-color: #232f3e;
+}
+
+.strive-logo{
+    height: 3rem;
+}
+.search-form, .search-form:focus{
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.nav-link:hover{
+    border-bottom: .5px solid white;
+}
+
+.carousel-indicators > button{
+  width: 10px  !important; 
+  height: 10px  !important;
+  border-radius: 50%;
+}
+
+nav .dropdown-menu{
+    background-color: #232f3e;
+    color: white;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+.avatar{
+    height: 2rem;
+}
+
+nav .btn:focus{
+    box-shadow: none;
+}
+#cards .row{
+}
+
+#cards .row h6::before{
+    content: 'Store ';
+    color: goldenrod;
+}
+.badge{
+    top: 2.7rem;
+    left: .72rem;
+}
+
+#cards img:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+    cursor: pointer;
+}
