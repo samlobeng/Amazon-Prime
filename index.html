@@ -4,10 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Prime Video - Video on Demand</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="splashscreen">
+      <div class="splash-screen-overlay"></div>
+      <img src="logo/strivevideo.png" class="logo-splash" alt="" srcset="">
+
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark prime-bar">
       <div class="container-fluid ms-5">
         <a class="navbar-brand" href="#">
@@ -109,7 +116,18 @@
     <div class="row" id="scifi">
       <h6 class="d-inline">Movies</h6>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-sm-5 mb-2 ">
-        <img src="movies/2-1.jpg" alt="movie card" class="img-fluid">
+        <div class="movie-card">
+          <img src="movies/2-1.jpg" alt="movie card" class="img-fluid w-100">
+          <div class="movie-card-body">
+            <div class="icons d-flex justify-content-end p-2 gap-3">
+              <ion-icon name="play" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Watch"></ion-icon>
+              <ion-icon name="add" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to watch list"></ion-icon>
+              <ion-icon name="ban-sharp" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Hide this movie"></ion-icon>
+
+            </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis, perspiciatis nobis hic excepturi totam nisi libero adipisci tenetur corrupti?</p> 
+          </div>
+        </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-sm-5">
         <img src="movies/2-2.jpg" alt="movie card" class="img-fluid">
@@ -150,5 +168,14 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+    <script>
+     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    </script>
+
   </body>
 </html>
